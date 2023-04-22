@@ -1,0 +1,182 @@
+.ImageEditor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    padding-top: 30px;
+}
+
+.image_editor_container {
+    height: 792px;
+    width: 570px;
+    position: relative;
+}
+
+.showBox {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.selectedImage {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.allImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.allImage {
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    object-fit: contain;
+    background-color: wheat;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+.image_editor_menu {
+    background-color: #fff;
+    display: flex;
+}
+
+.image_editor_link {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image_editor_link:first-child {
+    background-color: aquamarine;
+    border-right: 3px solid #fff;
+}
+
+.popup {
+    position: fixed;
+    background-color: #fff;
+    max-width: 100vw;
+    width: 1200px;
+    top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.image_editor_link:hover {
+    background-color: rgb(0, 229, 246);
+}
+
+.image_editor_link:first-child:hover {
+    background-color: rgb(65, 255, 192);
+}
+
+.addImageInputContainer {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addImageInputContainer input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    height: 7rem;
+    padding-bottom: 1rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.addBtn {
+    color: #fff;
+    height: 7rem;
+    padding-bottom: 1rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 132, 202);
+    border-radius: 25rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.closeCroper {
+    font-size: 25px;
+    z-index: 555;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.366);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.editIcon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    right: 0;
+    padding: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.editIcon img {
+    width: 50px;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.editIcon:hover {
+    box-shadow: 0.5px 0px 20px 2px rgb(232, 227, 191);
+}
+
+.editIcon:hover img {
+    box-shadow: 0.5px 0px 20px 2px rgb(199, 118, 118);
+}
+
+.resize-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ratioContainer {
+    font-size: 12px;
+    height: 40px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #000;
+    cursor: pointer;
+}
+
+.ratioContainer.a4Ratio {
+    height: 40px;
+    width: 30px;
+}

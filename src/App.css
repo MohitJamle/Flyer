@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app {
+  flex: 7;
+  width: 0%;
+  background-color: #e1fffed9;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #030e2bd9;
+  height: 100vh;
+  overflow: auto;
+  min-width: 250px;
+  padding-right: 5px;
+}

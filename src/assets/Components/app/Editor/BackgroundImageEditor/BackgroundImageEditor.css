@@ -1,0 +1,37 @@
+.ImageEditorContent {
+    z-index: 21;
+    width: 80%;
+    top: 0%;
+    padding-top: 1.5%;
+    height: 800px;
+    overflow: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 154, 154, 0.098);
+}
+
+.editorContent {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor_image_box {
+    max-height: 800px;
+    overflow: auto;
+}
+
+.editorImage {
+    max-width: 100px;
+    margin: 10px 0px;
+    display: block;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 10%;
+    font-size: 30px;
+    cursor: pointer;
+}
